@@ -1,0 +1,30 @@
+import random
+
+def number_guessing_game():
+    print("Welcome to the Number Guessing Game!")
+    lower_bound = int(input("Enter the lower bound of the range: "))
+    upper_bound = int(input("Enter the upper bound of the range: "))
+    
+    number_to_guess = random.randint(lower_bound, upper_bound)
+    attempts = 0
+    
+    while True:
+        guess = input(f"Guess a number between {lower_bound} and {upper_bound} (or type 'quit' to exit): ")
+        
+        if guess.lower() == 'quit':
+            print(f"You quit the game. The number was {number_to_guess}.")
+            break
+        
+        guess = int(guess)
+        attempts += 1
+        
+        if guess < number_to_guess:
+            print("Too low! Try again.")
+        elif guess > number_to_guess:
+            print("Too high! Try again.")
+        else:
+            print(f"Congratulations! You guessed the number {number_to_guess} in {attempts} attempts.")
+            break
+
+if __name__ == "__main__":
+    number_guessing_game()
