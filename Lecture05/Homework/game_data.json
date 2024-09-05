@@ -1,0 +1,11 @@
+{
+    "moves": 3,
+    "items": [
+        "potion"
+    ],
+    "enemies": [
+        "goblin",
+        "goblin",
+        "orc"
+    ]
+}
