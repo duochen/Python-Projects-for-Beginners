@@ -1,4 +1,4 @@
-### Project: **Maze Solver Using Recursion**
+### Project 2: **Maze Solver Using Recursion**
 
 #### **Project Description:**
 In this project, students will create a Python program that solves a maze using recursion. The maze will be represented as a grid, where each cell is either passable (a path) or blocked (a wall). The goal is to find a path from a starting point (entrance) to an ending point (exit) using recursive backtracking. The program will output the solution path if one exists or indicate that no path is found.

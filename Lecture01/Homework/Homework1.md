@@ -1,3 +1,4 @@
+### Interactive Quiz Game
 #### **Project Description:**
 Create an interactive quiz game that tests the user's knowledge on a variety of topics. The game should present multiple-choice questions and keep track of the user's score. The game will include features such as random question selection, user feedback, and a final score display. This project will help you revisit Python basics and introduce concepts such as loops, conditionals, and functions.
 

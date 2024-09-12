@@ -1,3 +1,4 @@
+### Project 1: Automated Test Case Generator
 **Project Description:**  
 In this project, students will develop an automated test case generator for math problems. The generator will create test cases for basic arithmetic operations (addition, subtraction, multiplication, division), and students will implement Python functions that perform the math operations and validate the results against the generated test cases. The project introduces students to the concept of automated testing and using assertions to ensure the accuracy of their code.
 

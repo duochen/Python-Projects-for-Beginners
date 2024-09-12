@@ -1,3 +1,4 @@
+### Project 1: Interactive Virtual Pet Application
 #### **Project Description:**
 
 In this project, students will create an interactive virtual pet application. The pet will have attributes such as hunger, happiness, and energy, which change over time based on user interactions. The goal is to build a console-based application where users can feed, play with, and put their pet to sleep. The application will provide real-time feedback and updates on the pet's status.
