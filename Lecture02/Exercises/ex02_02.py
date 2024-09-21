@@ -1,4 +1,4 @@
-# python ex02_2.py 5 3
+# python ex02_02.py 5 3
 import argparse
 
 # Create the ArgumentParser object
