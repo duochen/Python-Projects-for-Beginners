@@ -3,7 +3,7 @@ import shutil
 import datetime
 
 # Define the directory to organize
-directory = 'path/to/your/directory'
+directory = './TestData'
 
 # Define file type categories
 file_types = {
