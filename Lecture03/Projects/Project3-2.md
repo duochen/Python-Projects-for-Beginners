@@ -3,6 +3,14 @@
 **Description:**
 In this project, students will implement the Vigenère cipher, a method of encrypting text using a series of different Caesar ciphers based on the letters of a keyword. The program will allow users to input a message and a keyword, then encrypt or decrypt the message using the Vigenère cipher.
 
+#### Document
+[Vigenère cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher)
+
+#### Video
+[Animation](https://www.youtube.com/watch?v=rccRQcyKB5g)
+
+[Explanation](https://www.youtube.com/watch?v=SkJcmCaHqS0)
+
 **Learning Objectives:**
 - Understand the concept of encryption and decryption.
 - Implement a classical cipher using string manipulation.
