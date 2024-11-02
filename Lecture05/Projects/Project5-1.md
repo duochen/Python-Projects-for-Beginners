@@ -11,7 +11,8 @@ In this project, students will create a Python program that can encode and decod
 - Enhance problem-solving skills by encoding and decoding text in various ways.
 
 ### **Reference:**
-[Morse code](https://en.wikipedia.org/wiki/Morse_code)
+[Morse Code](https://en.wikipedia.org/wiki/Morse_code)
+[Morse Code Translator](https://morsecode.world/international/translator.html)
 
 ### **Extensions:**
 - Add more encoding techniques like Base64, Atbash cipher, or Vigenère cipher.
