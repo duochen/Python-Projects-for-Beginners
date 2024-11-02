@@ -9,6 +9,15 @@ In this project, students will analyze a dataset of movie ratings and find inter
 - Visualize data using Python's matplotlib library.
 - Enhance understanding of how data can be interpreted and communicated visually.
 - Develop skills in data-driven problem solving.
+- 
+### **Sample Data:**
+|title      | genre      | rating|
+|-----------|------------|---------|    
+|Movie1      |Action      |7.8|
+|Movie2      |Comedy      |6.5|
+|Movie3      |Drama       |9.0|
+|Movie4      |Comedy      |5.2|
+|Movie5      |Action      |8.3|
 
 ### **Extensions:**
 - Implement filters to analyze ratings by year, director, or cast members.
