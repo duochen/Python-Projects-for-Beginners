@@ -18,3 +18,6 @@ In this project, students will work on a maze-solving algorithm using depth-firs
 ### Debugging Instructions:
 - Students should identify and fix errors like wrong recursion logic, incorrect handling of visited nodes, and off-by-one index errors.
 - Use Python’s `pdb` debugger to step through the function and examine variable values.
+
+### Reference
+- [Introduction to Maze Solving Algorithms](https://sqlpad.io/tutorial/python-maze-solver/)
