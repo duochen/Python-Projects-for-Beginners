@@ -18,3 +18,19 @@ In this project, students will create a Python program that scrapes book reviews
 1. **User Input**: Allow the user to input the URL of the bookstore and the number of pages to scrape.
 2. **Data Visualization**: Generate visualizations (like bar charts) to display the average rating of books.
 3. **Enhanced Data Processing**: Include additional features like filtering reviews based on rating or date.
+
+### **Book Review Websites**
+Goodreads: Offers user reviews and ratings for a wide range of books.
+URL: https://www.goodreads.com
+
+Amazon Books: Provides customer reviews and ratings for books sold on the platform.
+URL: https://www.amazon.com/books-used-books-textbooks/b?ie=UTF8&node=283155
+
+Barnes & Noble: Includes reviews and ratings for books sold on the platform.
+URL: https://www.barnesandnoble.com
+
+LibraryThing: Focused on book lovers, featuring reviews, discussions, and recommendations.
+URL: https://www.librarything.com
+
+BookBub: Provides community reviews and recommendations for books.
+URL: https://www.bookbub.com
