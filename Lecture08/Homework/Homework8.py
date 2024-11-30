@@ -2,6 +2,20 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
+word_to_number = {
+    "zero": 0,
+    "one": 1,
+    "two": 2,
+    "three": 3,
+    "four": 4,
+    "five": 5,
+    "six": 6,
+    "seven": 7,
+    "eight": 8,
+    "nine": 9,
+    "ten": 10
+}
+
 # Function to scrape book reviews from a practice page
 def scrape_reviews(url):
     response = requests.get(url)
@@ -21,6 +35,7 @@ def scrape_reviews(url):
         rating_tag = book.p
         rating_class = rating_tag['class'][1] if rating_tag and 'class' in rating_tag.attrs else 'No Rating'
         rating = rating_class.replace('star', '').replace('stars', '').strip()
+        rating = word_to_number.get(rating.lower(), 0)
         
         # Extract review text (simulate with a placeholder text as example)
         review_text = 'No Review Text'  # Placeholder, as this page does not contain reviews
@@ -39,7 +54,7 @@ def analyze_data(filename):
     df = pd.read_csv(filename)
     
     # Convert ratings to numeric values for analysis
-    df['Rating'] = df['Rating'].apply(lambda x: float(x) if x.isdigit() else 0.0)
+    df['Rating'] = df['Rating'].apply(lambda x: float(x))
     
     # Calculate average rating per book
     avg_ratings = df.groupby('Book Title')['Rating'].mean()
