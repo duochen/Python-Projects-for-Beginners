@@ -3,6 +3,12 @@
 #### **Description:**
 In this project, students will create a Python program that compares different sorting algorithms. They will implement and test popular sorting algorithms such as Bubble Sort, Insertion Sort, and Merge Sort. The program will generate random lists of numbers and sort them using each algorithm. Students will then measure and compare the time each algorithm takes to sort the lists and visualize the results.
 
+### **Sorting Algorithms**
+- [Bubble Sort](https://youtu.be/xli_FI7CuzA?si=PpeCRCN5SOL7a_yc)
+- [Insertion Sort](https://youtu.be/JU767SDMDvA?si=qVTJ6F-rkGQcSJO-)
+- [Merge Sort](https://youtu.be/4VqmGXwpLqc?si=5J6qxX9rMhXwX5u7)
+
+
 #### **Learning Objectives:**
 1. Implement and understand basic sorting algorithms: Bubble Sort, Insertion Sort, and Merge Sort.
 2. Learn how to measure the performance of algorithms using time complexity analysis.
