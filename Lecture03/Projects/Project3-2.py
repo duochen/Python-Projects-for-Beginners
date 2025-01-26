@@ -1,37 +1,45 @@
-def vigenere_cipher(text, keyword, mode='encrypt'):
-    alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-    text = text.upper().replace(" ", "")
-    keyword = keyword.upper()
-    keyword_repeated = ''.join([keyword[i % len(keyword)] for i in range(len(text))])
-    
-    result = []
-    
+def vigenere_encrypt(text, key):
+    encrypted_text = ""
+    key = key.upper()
+    key_length = len(key)
+
     for i, char in enumerate(text):
-        if char in alphabet:
-            text_index = alphabet.index(char)
-            keyword_index = alphabet.index(keyword_repeated[i])
-            
-            if mode == 'encrypt':
-                new_index = (text_index + keyword_index) % 26
-            elif mode == 'decrypt':
-                new_index = (text_index - keyword_index) % 26
-            
-            result.append(alphabet[new_index])
+        if char.isalpha():
+            shift = ord(key[i % key_length]) - ord('A') + 1  # Shift is 1-based index
+            encrypted_char = chr(((ord(char) - ord('A') + shift) % 26) + ord('A'))
+            encrypted_text += encrypted_char
         else:
-            result.append(char)  # Preserve non-alphabetic characters
-    
-    return ''.join(result)
+            encrypted_text += char  # Non-alphabetic characters remain unchanged
 
-# Input from user
-text = input("Enter the message: ")
-keyword = input("Enter the keyword: ")
-mode = input("Encrypt or Decrypt? ").lower()
+    return encrypted_text
 
-# Encrypt or decrypt the message
-result = vigenere_cipher(text, keyword, mode)
+def vigenere_decrypt(ciphertext, key):
+    decrypted_text = ""
+    key = key.upper()
+    key_length = len(key)
 
-# Display the result
-if mode == 'encrypt':
-    print(f"Encrypted message: {result}")
-elif mode == 'decrypt':
-    print(f"Decrypted message: {result}")
+    for i, char in enumerate(ciphertext):
+        if char.isalpha():
+            shift = ord(key[i % key_length]) - ord('A') + 1  # Shift is 1-based index
+            decrypted_char = chr(((ord(char) - ord('A') - shift + 26) % 26) + ord('A'))
+            decrypted_text += decrypted_char
+        else:
+            decrypted_text += char  # Non-alphabetic characters remain unchanged
+
+    return decrypted_text
+
+# Verification
+message = "HELLO"
+key = "FUN"
+
+# Encrypt the message
+encrypted_message = vigenere_encrypt(message, key)
+print("Encrypted message:", encrypted_message)
+
+# Decrypt the message
+decrypted_message = vigenere_decrypt(encrypted_message, key)
+print("Decrypted message:", decrypted_message)
+
+# Validation
+assert encrypted_message == "NZZRJ", "Encryption failed!"
+assert decrypted_message == "HELLO", "Decryption failed!"
