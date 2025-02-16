@@ -1,7 +1,3 @@
-Here is a detailed step-by-step guide for your students to follow to complete **Python Project 2: Debugging a Maze Solver**.
-
----
-
 ## **Python Project 2: Debugging a Maze Solver**
 ### **Step-by-Step Guide**
 
